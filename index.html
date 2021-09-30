@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Profile & Loss Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Stock Profile & Loss Calculator</h1>
+    </header>
+    <main>
+      <label class="input-label" for="initial-price">
+        Intial Price
+        <input
+          class="input"
+          type="text"
+          id="initial-price"
+          placeholder="Enter Initial Price Here"
+      /></label>
+      <label class="input-label" for="stocks-quantity">
+        Quantity of Stocks
+        <input
+          class="input"
+          type="text"
+          id="stocks-quantity"
+          placeholder="Enter the Number of Stocks bought"
+        />
+      </label>
+      <label class="input-label" for="current-price"
+        >Current Price
+        <input
+          class="input"
+          type="text"
+          id="current-price"
+          placeholder="Enter the Current Price of the stocks"
+      /></label>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profit Loss Calculator</title>
-</head>
+      <button id="submit-btn" class="btn-check">Check</button>
 
-<body>
-        <h1>Check Profit/Loss on your Stock</h1>
-        <form name="check-form" class="form">
-            <label>
-                <input class="input" placeholder="Enter Cost Price of Stock" type="text" required />Purchase
-                Price
-            </label>
-            <br />
-            <label>
-                <input class="input" placeholder="Enter Quantity of Stock" type="text" required />Stock Quantity
-            </label>
-            <br />
-            <label>
-                <input class="input" placeholder="Enter Current Price of Stock" type="text" required />Current
-                Price
-            </label>
-            <button type="submit">Check</button>
-        </form>
-        <div id="output"></div>
-</body>
-
+      <div id="output-box" class="output"></div>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
