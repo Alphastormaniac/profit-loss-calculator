@@ -1,0 +1,52 @@
+:root {
+    --primary-color: rgb(0, 0, 143);
+    --secondary-color: #0156ff;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),url(/img/pl.jpg);
+    background-size: cover;
+    background-position: center ;
+    position: relative;
+    color: 	#066363;
+  }
+
+  h1{
+      text-align: center;
+  }
+
+/****CONTAINER*****/
+
+.container {
+    padding: 1rem;
+    position: relative;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+  
+}
+
+label{
+    color: #a6a8a8;
+}
+
+input{
+    width: 90%;
+    margin: 1rem 0;
+    background-color: darkseagreen;
+}
+
+#submit-btn{
+    padding: 0.5rem;
+    width: 50%;
+    display: inline-block;
+    
+    margin: auto;
+}
+
